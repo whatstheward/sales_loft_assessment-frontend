@@ -1,4 +1,5 @@
 import React from 'react';
+import PersonLine from './PeopleLine'
 
 
 const PeopleContainer = (props) => {
@@ -19,6 +20,7 @@ const PeopleContainer = (props) => {
                         </tr>
                     </thead>
                     <tbody>
+                        {props.people.map(person => <PersonLine person={person}/>)}
                     </tbody>
                 </table>
             </div>
