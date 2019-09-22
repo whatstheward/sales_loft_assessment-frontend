@@ -15,6 +15,17 @@ const CharCounter = (props) => {
                             </tr>
                         </thead>
                         <tbody>
+                            {props.char.map(char=>{
+                                return(
+                                <tr>
+                                    <td>
+                                        {char[0]}
+                                    </td>
+                                    <td>
+                                        {char[1]}
+                                    </td>
+                                </tr>
+                            )})}
                         </tbody>
                     </table>
                 </div>
