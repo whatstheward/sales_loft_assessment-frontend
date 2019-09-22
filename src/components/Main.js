@@ -50,7 +50,7 @@ class Main extends React.Component {
     render(){
         return(
             <>
-            <button onClick={()=>this.getEmailAddresses()}>Count Unique Characters!</button>
+            <button onClick={()=>this.getEmailAddresses()}>Count Unique Characters in Emails!</button>
         <div>
         { this.state.char.length > 0 ?
                 <CharCounter char={this.state.char} />
